@@ -108,14 +108,24 @@ Accordingly, the ER diagram for 3NF looks like this
 
 According to 3NF, a database and tables were built using [SQL queries](queries.sql).
 
-![Orders Table](ordersTabel.png)
+![](ordersTabel.png)
 
-![OrdersItems Table](orderItemsTabel.png)
+### Orders Table
 
-![Client Table](clientTable.png)
+![](orderItemsTabel.png)
 
-![Product Table](clientTable.png)
+### OrdersItems Table
+
+![](clientTable.png)
+
+### Client Table
+
+![](clientTable.png)
+
+### Product Table
 
 The final structure of tables and columns looks like this
 
-![Database schemas](schemasDB.png)
+![](schemasDB.png)
+
+### Database schemas
