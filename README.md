@@ -36,10 +36,15 @@ Let's transform the basic table into the first normal form.
 | 103         | Мишка       | 4        | Комп'ютерна 3  | 2023-03-17  | Коваленко|
 
 Accordingly, the ER diagram for 1NF looks like this
-![Table in 1NF](1NF.png)
+![](1NF.png)
+
+*Table in 1NF*
+
+
 ## 2NF
 Next step is transform table from 1NF to 2NF.  To obtain 2NF, we need to divide the original 1NF table into 2 tables - Orders and OrderItems
-### Orders
+
+*Orders*
 
 | OrderNumber (PK)  | OrderDate  | ClientAddress  | Client     |
 |-------------------|------------|----------------|------------|
@@ -47,7 +52,7 @@ Next step is transform table from 1NF to 2NF.  To obtain 2NF, we need to divide 
 | 102               | 2023-03-16 | Басейна 2      | Шевченко   |
 | 103               | 2023-03-17 | Комп'ютерна 3  | Коваленко  |
 
-### OrderItems
+*OrderItems*
 
 | id (PK) | OrderNumber | ProductName | Quantity |
 |---------|-------------|-------------|----------|
@@ -58,13 +63,15 @@ Next step is transform table from 1NF to 2NF.  To obtain 2NF, we need to divide 
 
 
 Accordingly, the ER diagram for 2NF looks like this
-![Table in 2NF](2NF.png)
+![](2NF.png)
+
+*Table in 2NF*
 
 
 ## 3NF
 To obtain 3NF, it is necessary to divide the 2NF tables.
 
-### Orders
+*Orders*
 
 | OrderNumber (PK)  | OrderDate  | clientID |
 |-------------------|------------|----------|
@@ -73,7 +80,7 @@ To obtain 3NF, it is necessary to divide the 2NF tables.
 | 103               | 2023-03-17 | 3        |
 
 
-### OrderItems
+*OrderItems*
 
 | id (PK) | OrderNumber | ProductName | Quantity |
 |---------|-------------|-------------|----------|
@@ -83,7 +90,7 @@ To obtain 3NF, it is necessary to divide the 2NF tables.
 | 4       | 103         | 2           | 4        |
 
 
-### Clients
+*Clients*
 
 | id (PK) | Client      | ClientAddress    |
 |---------|-------------|------------------|
@@ -92,7 +99,7 @@ To obtain 3NF, it is necessary to divide the 2NF tables.
 | 3       | Коваленко   | Комп'ютерна 3    |
 
 
-### Products
+*Products*
 
 | id (PK) | ProductName |
 |---------|-------------|
@@ -101,7 +108,9 @@ To obtain 3NF, it is necessary to divide the 2NF tables.
 | 3       | Принтер     |
 
 Accordingly, the ER diagram for 3NF looks like this
-![Table in 3NF](3NF.png)
+![](3NF.png)
+
+*Table in 3NF*
 
 
 ## Database Schemas
@@ -110,22 +119,22 @@ According to 3NF, a database and tables were built using [SQL queries](queries.s
 
 ![](ordersTabel.png)
 
-### Orders Table
+*Orders Table*
 
 ![](orderItemsTabel.png)
 
-### OrdersItems Table
+*OrdersItems Table*
 
 ![](clientTable.png)
 
-### Client Table
+*Client Table*
 
 ![](clientTable.png)
 
-### Product Table
+*Product Table*
 
 The final structure of tables and columns looks like this
 
 ![](schemasDB.png)
 
-### Database schemas
+*Database schemas*
