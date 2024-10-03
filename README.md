@@ -26,7 +26,10 @@
 | 103         | Мишка: 4                                | Комп'ютерна 3  | 2023-03-17  | Коваленко|
 
 
+
 ## 1NF
+
+
 Let's transform the basic table into the first normal form.
 | OrderNumber | ProductName | Quantity | ClientAddress  | OrderDate   | Client   |
 |-------------|-------------|----------|----------------|-------------|----------|
@@ -36,12 +39,16 @@ Let's transform the basic table into the first normal form.
 | 103         | Мишка       | 4        | Комп'ютерна 3  | 2023-03-17  | Коваленко|
 
 Accordingly, the ER diagram for 1NF looks like this
+
+
 ![](1NF.png)
+
 
 *Table in 1NF*
 
 
 ## 2NF
+
 Next step is transform table from 1NF to 2NF.  To obtain 2NF, we need to divide the original 1NF table into 2 tables - Orders and OrderItems
 
 *Orders*
@@ -65,7 +72,7 @@ Next step is transform table from 1NF to 2NF.  To obtain 2NF, we need to divide 
 Accordingly, the ER diagram for 2NF looks like this
 ![](2NF.png)
 
-*Table in 2NF*
+*Tables in 2NF*
 
 
 ## 3NF
@@ -110,7 +117,7 @@ To obtain 3NF, it is necessary to divide the 2NF tables.
 Accordingly, the ER diagram for 3NF looks like this
 ![](3NF.png)
 
-*Table in 3NF*
+*Tables in 3NF*
 
 
 ## Database Schemas
